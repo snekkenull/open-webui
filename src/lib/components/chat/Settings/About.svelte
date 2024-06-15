@@ -57,7 +57,7 @@
 						<Tooltip content={WEBUI_BUILD_HASH}>
 							v{WEBUI_VERSION}
 						</Tooltip>
-
+						{#if false}
 						<a
 							href="https://github.com/open-webui/open-webui/releases/tag/v{version.latest}"
 							target="_blank"
@@ -67,7 +67,7 @@
 								: updateAvailable
 								? `(v${version.latest} ${$i18n.t('available!')})`
 								: $i18n.t('(latest)')}
-						</a>
+						</a>{/if}
 					</div>
 
 					<button
@@ -105,7 +105,7 @@
 		{/if}
 
 		<hr class=" dark:border-gray-850" />
-
+		{#if false}
 		<div class="flex space-x-1">
 			<a href="https://discord.gg/5rJgQTnV4s" target="_blank">
 				<img
@@ -138,6 +138,6 @@
 				href="https://github.com/tjbck"
 				target="_blank">Timothy J. Baek</a
 			>
-		</div>
+		</div>{/if}
 	</div>
 </div>
