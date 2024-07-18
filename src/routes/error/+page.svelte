@@ -32,6 +32,7 @@
 
 						<br class=" " />
 						<br class=" " />
+						{#if false}	
 						<a
 							class=" font-semibold underline"
 							href="https://github.com/open-webui/open-webui#how-to-install-"
@@ -41,6 +42,7 @@
 						<a class=" font-semibold underline" href="https://discord.gg/5rJgQTnV4s" target="_blank"
 							>{$i18n.t('join our Discord for help.')}</a
 						>
+						{/if}
 					</div>
 
 					<div class=" mt-6 mx-auto relative group w-fit">
