@@ -461,9 +461,9 @@ else:
 ####################################
 # CUSTOM_NAME
 ####################################
-
+WEBUI_NAME = os.environ.get("WEBUI_NAME", "OPEN")
 CUSTOM_NAME = os.environ.get("CUSTOM_NAME", "")
-
+"""
 if CUSTOM_NAME:
     try:
         r = requests.get(f"https://api.openwebui.com/api/v1/custom/{CUSTOM_NAME}")
@@ -499,8 +499,8 @@ if CUSTOM_NAME:
     except Exception as e:
         log.exception(e)
         pass
-
-
+"""
+WEBUI_FAVICON_URL = "/static/favicon.png"
 ####################################
 # File Upload DIR
 ####################################

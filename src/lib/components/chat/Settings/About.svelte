@@ -57,7 +57,7 @@
 						<Tooltip content={WEBUI_BUILD_HASH}>
 							v{WEBUI_VERSION}
 						</Tooltip>
-
+						{#if false}
 						<a
 							href="https://github.com/open-webui/open-webui/releases/tag/v{version.latest}"
 							target="_blank"
@@ -67,9 +67,9 @@
 								: updateAvailable
 									? `(v${version.latest} ${$i18n.t('available!')})`
 									: $i18n.t('(latest)')}
-						</a>
+						</a>{/if}
 					</div>
-
+						
 					<button
 						class=" underline flex items-center space-x-1 text-xs text-gray-500 dark:text-gray-500"
 						on:click={() => {
@@ -105,7 +105,7 @@
 		{/if}
 
 		<hr class=" dark:border-gray-850" />
-
+		{#if false}
 		<div class="flex space-x-1">
 			<a href="https://discord.gg/5rJgQTnV4s" target="_blank">
 				<img
@@ -127,7 +127,7 @@
 					src="https://img.shields.io/github/stars/open-webui/open-webui?style=social&label=Star us on Github"
 				/>
 			</a>
-		</div>
+		</div>{/if}
 
 		<div class="mt-2 text-xs text-gray-400 dark:text-gray-500">
 			{#if !$WEBUI_NAME.includes('Open WebUI')}
